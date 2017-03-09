@@ -5,7 +5,8 @@
   "scripts": {
     "ngc": "ngc",
     "compile": "ngc && npm run build",
-    "build": "webpack && cp bundles/ng2-resource-rest.umd.js bundles/index.js"
+    "build": "webpack && cp bundles/ng2-resource-rest.umd.js bundles/index.js",
+    "postinstall": "npm run compile"
   },
   "keywords": [
     "ng2-resource",
